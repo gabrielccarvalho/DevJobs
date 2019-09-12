@@ -55,5 +55,6 @@ More instructions will come with the updated versions of the project!
 ## Technologies:
 
 - [React](https://reactjs.org/) - Used to build the site.
-- [Eslint](https://eslint.org/) - JS Linter and code style
-- [Prettier](https://github.com/prettier/prettier) - Code formatter
+- [Eslint](https://eslint.org/) - JS Linter and code style.
+- [Prettier](https://github.com/prettier/prettier) - Code formatter.
+- [React Router DOM](https://reacttraining.com/react-router/web/guides/quick-start) - Routes management.
