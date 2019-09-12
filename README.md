@@ -36,6 +36,8 @@ $ https://github.com/gabrielccarvalho/devjobs
 $ cd devjobs
 ```
 
+Installing the dependencies
+
 ```bash
 $ yarn
 ```
