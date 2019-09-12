@@ -52,4 +52,6 @@ More instructions will come with the updated versions of the project!
 
 ## Technologies:
 
-- [React](https://reactjs.org/)
+- [React](https://reactjs.org/) - Used to build the site.
+- [Eslint](https://eslint.org/) - JS Linter and code style
+- [Prettier](https://github.com/prettier/prettier) - Code formatter
