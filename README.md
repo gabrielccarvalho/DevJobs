@@ -58,3 +58,4 @@ More instructions will come with the updated versions of the project!
 - [Eslint](https://eslint.org/) - JS Linter and code style.
 - [Prettier](https://github.com/prettier/prettier) - Code formatter.
 - [React Router DOM](https://reacttraining.com/react-router/web/guides/quick-start) - Routes management.
+- [Styled Component](https://www.styled-components.com/) - Used to style the site.
