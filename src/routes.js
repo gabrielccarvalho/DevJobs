@@ -20,11 +20,24 @@ const PrivateRoute = ({ component: Component, ...rest }) => (
   />
 );
 
+const LoginRoute = ({ component: Component, ...rest }) => (
+  <Route
+    {...rest}
+    render={props =>
+      isAuthenticated() ? (
+        <Redirect to={{ pathname: '/Main', state: { from: props.location } }} />
+      ) : (
+        <Component {...props} />
+      )
+    }
+  />
+);
+
 export default function Routes() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/" component={Login} />
+        <LoginRoute exact path="/" component={Login} />
         <PrivateRoute path="/Main" component={Main} />
         <PrivateRoute path="/Register" component={Register} />
       </Switch>
