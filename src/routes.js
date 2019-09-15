@@ -14,7 +14,24 @@ const PrivateRoute = ({ component: Component, ...rest }) => (
       isAuthenticated() ? (
         <Component {...props} />
       ) : (
+        <Redirect
+          to={{ pathname: '/Login', state: { from: props.location } }}
+        />
+      )
+    }
+  />
+);
+
+const ErrorRoute = ({ component: Component, ...rest }) => (
+  <Route
+    {...rest}
+    render={props =>
+      isAuthenticated() ? (
         <Redirect to={{ pathname: '/', state: { from: props.location } }} />
+      ) : (
+        <Redirect
+          to={{ pathname: '/Login', state: { from: props.location } }}
+        />
       )
     }
   />
@@ -25,7 +42,7 @@ const LoginRoute = ({ component: Component, ...rest }) => (
     {...rest}
     render={props =>
       isAuthenticated() ? (
-        <Redirect to={{ pathname: '/Main', state: { from: props.location } }} />
+        <Redirect to={{ pathname: '/', state: { from: props.location } }} />
       ) : (
         <Component {...props} />
       )
@@ -37,9 +54,10 @@ export default function Routes() {
   return (
     <BrowserRouter>
       <Switch>
-        <LoginRoute exact path="/" component={Login} />
-        <PrivateRoute path="/Main" component={Main} />
-        <PrivateRoute path="/Register" component={Register} />
+        <LoginRoute path="/Login" component={Login} />
+        <Route path="/Register" component={Register} />
+        <PrivateRoute exact path="/" component={Main} />
+        <ErrorRoute path="*" exact={true} />
       </Switch>
     </BrowserRouter>
   );

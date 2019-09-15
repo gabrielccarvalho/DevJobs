@@ -32,7 +32,7 @@ class Login extends Component {
         const response = await LProvider.login(email, password);
         console.log(response.data);
         await login(response.data.token, response.data.user);
-        this.props.history.push('/Main');
+        this.props.history.push('/');
       } catch (err) {
         this.setState({
           error:
