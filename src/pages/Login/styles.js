@@ -8,42 +8,22 @@ export const Container = styled.div`
   height: 100vh;
   width: 100vw;
   background-color: #ffffff;
+`;
 
-  form {
-    height: 45vh;
-    width: 45vh;
-    padding: 20px;
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 5px;
-    background-color: #ffffff;
-    -webkit-box-shadow: -2px 10px 29px 0px rgba(0, 0, 0, 0.72);
-    -moz-box-shadow: -2px 10px 29px 0px rgba(0, 0, 0, 0.72);
-    box-shadow: -2px 10px 29px 0px rgba(0, 0, 0, 0.72);
-  }
-
-  form.register {
-    height: 6vh;
-    width: 45vh;
-    padding: 20px;
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 5px;
-    background-color: #ffffff;
-    -webkit-box-shadow: -2px 10px 29px 0px rgba(0, 0, 0, 0.72);
-    -moz-box-shadow: -2px 10px 29px 0px rgba(0, 0, 0, 0.72);
-    box-shadow: -2px 10px 29px 0px rgba(0, 0, 0, 0.72);
-  }
-
-  a {
-    font-size: 16px;
-    font-weight: 300;
-    font-family: sans-serif;
-    text-decoration: none;
-    color: blue;
-  }
+export const Form = styled.form`
+  height: 45vh;
+  width: 45vh;
+  padding: 20px;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #ffffff;
+  -webkit-box-shadow: -2px 10px 29px 0px rgba(0, 0, 0, 0.72);
+  -moz-box-shadow: -2px 10px 29px 0px rgba(0, 0, 0, 0.72);
+  box-shadow: -2px 10px 29px 0px rgba(0, 0, 0, 0.72);
+  animation-name: FadeIn;
+  animation-duration: 600ms;
 
   small {
     font-size: 16px;
@@ -87,5 +67,59 @@ export const Container = styled.div`
     border: 0;
     border-radius: 5px;
     margin-top: 25px;
+  }
+
+  @keyframes FadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+`;
+
+export const RegisterForm = styled.form`
+  height: 6vh;
+  width: 45vh;
+  padding: 20px;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #ffffff;
+  -webkit-box-shadow: -2px 10px 29px 0px rgba(0, 0, 0, 0.72);
+  -moz-box-shadow: -2px 10px 29px 0px rgba(0, 0, 0, 0.72);
+  box-shadow: -2px 10px 29px 0px rgba(0, 0, 0, 0.72);
+  animation-name: MoveFromRight;
+  animation-duration: 1s;
+  animation-delay: 600ms;
+  animation-fill-mode: backwards;
+
+  a {
+    font-size: 16px;
+    font-weight: 300;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: blue;
+  }
+
+  small {
+    font-size: 16px;
+    font-weight: 300;
+    font-family: sans-serif;
+  }
+
+  @keyframes MoveFromRight {
+    from {
+      opacity: 0;
+      transform: translateX(50%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0%);
+    }
   }
 `;

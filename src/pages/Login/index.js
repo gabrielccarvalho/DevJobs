@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { Container } from './styles';
+import { Container, Form, RegisterForm } from './styles';
 
 export default function Login() {
   const [emailSelected, setEmailSelected] = useState(false);
@@ -10,7 +10,7 @@ export default function Login() {
   return (
     <>
       <Container>
-        <form>
+        <Form>
           <br></br>
           <div>
             <img src="https://i.imgur.com/3ZMAPsP.png" />
@@ -28,6 +28,7 @@ export default function Login() {
               setEmailSelected(false);
             }}
             type="email"
+            spellcheck="false"
             placeholder={emailSelected ? '' : 'Email'}
             onChange={e => setEmail(e.target.value)}
           />
@@ -39,17 +40,19 @@ export default function Login() {
               setSenhaSelected(false);
             }}
             type="password"
+            spellcheck="false"
             placeholder={senhaSelected ? '' : 'Senha'}
             onChange={e => setSenha(e.target.value)}
           />
           <button type="submit">Sign In</button>
-        </form>
+        </Form>
         <br></br>
         <br></br>
-        <form className="register">
-          <small>New to DevJobs?</small> <a href="">Create an account</a>
+        <RegisterForm>
+          <small>New to DevJobs?</small>{' '}
+          <a href="/Register">Create an account</a>
           <small>.</small>
-        </form>
+        </RegisterForm>
       </Container>
     </>
   );
