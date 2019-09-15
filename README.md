@@ -21,9 +21,9 @@ As a developer or a company in general, the biggest problem is always either fou
 ### Pages
 
 
-Login page                                                 | Register page
-:-------------------------:                                | :-------------------------:
-<img src="https://i.imgur.com/39sMsBV.png" width="50%" />  |  <img src="https://i.imgur.com/GZhsVUN.png" width="50%" />
+Login page                                     | Register page
+:-------------------------:                    | :-------------------------:
+<img src="https://i.imgur.com/39sMsBV.png" />  |  <img src="https://i.imgur.com/GZhsVUN.png" />
 
 ## Contribuing
 
