@@ -82,10 +82,12 @@ export const Form = styled.form`
 
   @keyframes FadeIn {
     from {
-      height: 400px;
+      opacity: 0;
+      transform: scale(0.8);
     }
     to {
-      height: 525px;
+      opacity: 1;
+      transform: scale(1);
     }
   }
 `;
