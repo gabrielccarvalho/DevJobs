@@ -66,3 +66,4 @@ More instructions will come with the updated versions of the project!
 - [React Router DOM](https://reacttraining.com/react-router/web/guides/quick-start) - Routes management.
 - [Styled Component](https://www.styled-components.com/) - Used to style the site.
 - [React Icons](https://www.npmjs.com/package/react-icons) - Used to get icons.
+- [Axios](https://github.com/axios/axios) - Used to manage the API connection.
