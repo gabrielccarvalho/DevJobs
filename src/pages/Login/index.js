@@ -3,11 +3,16 @@ import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 
 import LoginProvider from '../../providers/LoginProvider';
-import { login } from '../../services/auth';
+import { login, logout } from '../../services/auth';
 
 import { Container, Form, RegisterForm, Message } from './styles';
 
 class Login extends Component {
+  constructor(props) {
+    super(props);
+
+    this.handleLogout();
+  }
   state = {
     email: '',
     password: '',
@@ -16,6 +21,10 @@ class Login extends Component {
 
     emailSelected: false,
     passwordSelected: false,
+  };
+
+  handleLogout = async () => {
+    await logout();
   };
 
   handleLogin = async e => {
