@@ -24,6 +24,7 @@ export const Form = styled.form`
   box-shadow: -2px 10px 29px 0px rgba(0, 0, 0, 0.72);
   animation-name: FadeIn;
   animation-duration: 600ms;
+  overflow: hidden;
 
   small {
     font-size: 16px;
@@ -81,12 +82,10 @@ export const Form = styled.form`
 
   @keyframes FadeIn {
     from {
-      opacity: 0;
-      transform: scale(0.8);
+      height: 400px;
     }
     to {
-      opacity: 1;
-      transform: scale(1);
+      height: 525px;
     }
   }
 `;
