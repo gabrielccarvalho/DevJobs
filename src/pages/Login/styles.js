@@ -11,8 +11,8 @@ export const Container = styled.div`
 `;
 
 export const Form = styled.form`
-  height: 45vh;
-  width: 45vh;
+  height: 450px;
+  width: 450px;
   padding: 20px;
   text-align: center;
   flex-direction: column;
@@ -32,7 +32,7 @@ export const Form = styled.form`
   }
 
   br {
-    margin-top: 2vh;
+    margin-top: 20px;
   }
 
   img {
@@ -59,10 +59,10 @@ export const Form = styled.form`
 
   button {
     color: white;
-    font-size: 2vh;
+    font-size: 20px;
     font-weight: bold;
     background: #50d878;
-    height: 5vh;
+    height: 50px;
     width: 80%;
     border: 0;
     border-radius: 5px;
@@ -82,8 +82,8 @@ export const Form = styled.form`
 `;
 
 export const RegisterForm = styled.form`
-  height: 6vh;
-  width: 45vh;
+  height: 60px;
+  width: 450px;
   padding: 20px;
   text-align: center;
   flex-direction: column;
@@ -122,4 +122,11 @@ export const RegisterForm = styled.form`
       transform: translateX(0%);
     }
   }
+`;
+
+export const Message = styled.h6`
+  font-size: 16px;
+  font-weight: 300;
+  font-family: sans-serif;
+  color: red;
 `;
