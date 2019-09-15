@@ -22,7 +22,7 @@ As a developer or a company in general, the biggest problem is always either fou
 
 #### Login page
 
-<img src="https://i.imgur.com/mjBLWgq.png" />
+<img src="https://i.imgur.com/39sMsBV.png" />
 
 ## Contribuing
 
