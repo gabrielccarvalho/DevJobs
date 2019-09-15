@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 
 import LoginProvider from '../../providers/LoginProvider';
-import { login, isAuthenticated } from '../../services/auth';
+import { login } from '../../services/auth';
 
 import { Container, Form, RegisterForm, Message } from './styles';
 

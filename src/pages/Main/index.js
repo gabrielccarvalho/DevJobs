@@ -1,7 +1,13 @@
 import React from 'react';
 
-import { Title } from './styles';
+import { logout } from '../../services/auth';
+
+import {} from './styles';
 
 export default function Main() {
-  return <Title>Main</Title>;
+  return (
+    <button type="button" onClick={() => logout()}>
+      Logout
+    </button>
+  );
 }

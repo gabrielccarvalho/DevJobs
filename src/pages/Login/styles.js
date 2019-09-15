@@ -11,7 +11,7 @@ export const Container = styled.div`
 `;
 
 export const Form = styled.form`
-  height: 450px;
+  height: 400px;
   width: 450px;
   padding: 20px;
   text-align: center;

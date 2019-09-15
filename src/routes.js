@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 
 import Login from './pages/Login';
 import Register from './pages/Register';
+import Contact from './pages/Contact';
 import Main from './pages/Main';
 
 import { isAuthenticated } from './services/auth';
@@ -56,6 +57,7 @@ export default function Routes() {
       <Switch>
         <LoginRoute path="/Login" component={Login} />
         <Route path="/Register" component={Register} />
+        <Route path="/Contact-us" component={Contact} />
         <PrivateRoute exact path="/" component={Main} />
         <ErrorRoute path="*" exact={true} />
       </Switch>
