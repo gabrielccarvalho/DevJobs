@@ -48,42 +48,42 @@ class Login extends Component {
       <>
         <Container>
           <Form onSubmit={this.handleLogin}>
-            <br></br>
             <div>
               <img src="https://i.imgur.com/3ZMAPsP.png" alt="logo" />
             </div>
+            <br></br>
             <small>Log In to DevJobs</small>
-            <br></br>
-            <br></br>
-            <input
-              onFocus={() => {
-                this.setState({ emailSelected: true });
-              }}
-              onBlur={() => {
-                this.setState({ emailSelected: false });
-              }}
-              type="email"
-              spellCheck="false"
-              autocapitalize="none"
-              placeholder={this.state.emailSelected ? '' : 'Email'}
-              onChange={e => this.setState({ email: e.target.value })}
-            />
-            <br></br>
-            <input
-              onFocus={() => {
-                this.setState({ passwordSelected: true });
-              }}
-              onBlur={() => {
-                this.setState({ passwordSelected: false });
-              }}
-              type="password"
-              spellCheck="false"
-              autocapitalize="none"
-              placeholder={this.state.passwordSelected ? '' : 'Password'}
-              onChange={e => this.setState({ password: e.target.value })}
-            />
-            {this.state.error ? <Message>{this.state.error}</Message> : ''}
-            <button type="submit">Sign In</button>
+            <div>
+              <input
+                onFocus={() => {
+                  this.setState({ emailSelected: true });
+                }}
+                onBlur={() => {
+                  this.setState({ emailSelected: false });
+                }}
+                type="email"
+                spellCheck="false"
+                autocapitalize="none"
+                placeholder={this.state.emailSelected ? '' : 'Email'}
+                onChange={e => this.setState({ email: e.target.value })}
+              />
+              <br></br>
+              <input
+                onFocus={() => {
+                  this.setState({ passwordSelected: true });
+                }}
+                onBlur={() => {
+                  this.setState({ passwordSelected: false });
+                }}
+                type="password"
+                spellCheck="false"
+                autocapitalize="none"
+                placeholder={this.state.passwordSelected ? '' : 'Password'}
+                onChange={e => this.setState({ password: e.target.value })}
+              />
+              {this.state.error ? <Message>{this.state.error}</Message> : ''}
+              <button type="submit">Sign In</button>
+            </div>
           </Form>
           <RegisterForm>
             <small>New to DevJobs?</small>{' '}

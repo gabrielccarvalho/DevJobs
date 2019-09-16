@@ -70,6 +70,10 @@ export const Form = styled.form`
     -moz-appearance: textfield;
   }
 
+  div {
+    margin-top: 30px;
+  }
+
   button {
     color: #50d878;
     font-size: 20px;

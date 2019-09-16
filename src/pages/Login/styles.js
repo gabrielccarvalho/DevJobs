@@ -59,6 +59,10 @@ export const Form = styled.form`
     }
   }
 
+  div {
+    margin-top: 30px;
+  }
+
   button {
     color: #50d878;
     font-size: 20px;
@@ -68,7 +72,7 @@ export const Form = styled.form`
     width: 60%;
     border: 1px solid #50d878;
     border-radius: 28px;
-    margin-top: 25px;
+    margin-top: 10px;
     transition: 500ms;
     &:hover {
       color: #fff;

@@ -46,67 +46,67 @@ class Register extends Component {
       <>
         <Container>
           <Form onSubmit={this.handleRegister}>
-            <br></br>
             <div>
               <img src="https://i.imgur.com/3ZMAPsP.png" alt="logo" />
             </div>
+            <br></br>
             <small>Sign Up to DevJobs</small>
-            <br></br>
-            <br></br>
-            <input
-              onFocus={() => {
-                this.setState({ nameSelected: true });
-              }}
-              onBlur={() => {
-                this.setState({ nameSelected: false });
-              }}
-              type="text"
-              spellCheck="false"
-              autocapitalize="none"
-              placeholder={this.state.nameSelected ? '' : 'Name'}
-              onChange={e => this.setState({ name: e.target.value })}
-            />
-            <input
-              onFocus={() => {
-                this.setState({ emailSelected: true });
-              }}
-              onBlur={() => {
-                this.setState({ emailSelected: false });
-              }}
-              type="email"
-              spellCheck="false"
-              autocapitalize="none"
-              placeholder={this.state.emailSelected ? '' : 'Email'}
-              onChange={e => this.setState({ email: e.target.value })}
-            />
-            <input
-              onFocus={() => {
-                this.setState({ cpfSelected: true });
-              }}
-              onBlur={() => {
-                this.setState({ cpfSelected: false });
-              }}
-              type="number"
-              spellCheck="false"
-              autocapitalize="none"
-              placeholder={this.state.cpfSelected ? '' : 'Cpf'}
-              onChange={e => this.setState({ cpf: e.target.value })}
-            />
-            <input
-              onFocus={() => {
-                this.setState({ passwordSelected: true });
-              }}
-              onBlur={() => {
-                this.setState({ passwordSelected: false });
-              }}
-              type="password"
-              spellCheck="false"
-              autocapitalize="none"
-              placeholder={this.state.passwordSelected ? '' : 'Password'}
-              onChange={e => this.setState({ password: e.target.value })}
-            />
-            {this.state.error ? <Message>{this.state.error}</Message> : ''}
-            <button type="submit">Register</button>
+            <div>
+              <input
+                onFocus={() => {
+                  this.setState({ nameSelected: true });
+                }}
+                onBlur={() => {
+                  this.setState({ nameSelected: false });
+                }}
+                type="text"
+                spellCheck="false"
+                autocapitalize="none"
+                placeholder={this.state.nameSelected ? '' : 'Name'}
+                onChange={e => this.setState({ name: e.target.value })}
+              />
+              <input
+                onFocus={() => {
+                  this.setState({ emailSelected: true });
+                }}
+                onBlur={() => {
+                  this.setState({ emailSelected: false });
+                }}
+                type="email"
+                spellCheck="false"
+                autocapitalize="none"
+                placeholder={this.state.emailSelected ? '' : 'Email'}
+                onChange={e => this.setState({ email: e.target.value })}
+              />
+              <input
+                onFocus={() => {
+                  this.setState({ cpfSelected: true });
+                }}
+                onBlur={() => {
+                  this.setState({ cpfSelected: false });
+                }}
+                type="number"
+                spellCheck="false"
+                autocapitalize="none"
+                placeholder={this.state.cpfSelected ? '' : 'Cpf'}
+                onChange={e => this.setState({ cpf: e.target.value })}
+              />
+              <input
+                onFocus={() => {
+                  this.setState({ passwordSelected: true });
+                }}
+                onBlur={() => {
+                  this.setState({ passwordSelected: false });
+                }}
+                type="password"
+                spellCheck="false"
+                autocapitalize="none"
+                placeholder={this.state.passwordSelected ? '' : 'Password'}
+                onChange={e => this.setState({ password: e.target.value })}
+              />
+              {this.state.error ? <Message>{this.state.error}</Message> : ''}
+              <button type="submit">Register</button>
+            </div>
           </Form>
           <CompanyForm>
             <small>Are you a company?</small>{' '}
