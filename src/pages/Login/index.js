@@ -52,9 +52,7 @@ class Login extends Component {
             <div>
               <img src="https://i.imgur.com/3ZMAPsP.png" alt="logo" />
             </div>
-            <br></br>
             <small>Log In to DevJobs</small>
-            <br></br>
             <br></br>
             <br></br>
             <input
@@ -87,8 +85,6 @@ class Login extends Component {
             {this.state.error ? <Message>{this.state.error}</Message> : ''}
             <button type="submit">Sign In</button>
           </Form>
-          <br></br>
-          <br></br>
           <RegisterForm>
             <small>New to DevJobs?</small>{' '}
             <a href="/Register">Create an account</a>

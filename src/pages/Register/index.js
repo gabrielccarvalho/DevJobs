@@ -50,9 +50,7 @@ class Register extends Component {
             <div>
               <img src="https://i.imgur.com/3ZMAPsP.png" alt="logo" />
             </div>
-            <br></br>
             <small>Sign Up to DevJobs</small>
-            <br></br>
             <br></br>
             <br></br>
             <input
@@ -110,8 +108,6 @@ class Register extends Component {
             {this.state.error ? <Message>{this.state.error}</Message> : ''}
             <button type="submit">Register</button>
           </Form>
-          <br></br>
-          <br></br>
           <CompanyForm>
             <small>Are you a company?</small>{' '}
             <a href="/Contact-us">Talk to us</a>

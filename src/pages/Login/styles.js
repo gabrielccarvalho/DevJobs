@@ -32,7 +32,7 @@ export const Form = styled.form`
   }
 
   br {
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
   img {
@@ -96,6 +96,7 @@ export const Form = styled.form`
 export const RegisterForm = styled.form`
   height: 60px;
   width: 450px;
+  margin-top: 30px;
   padding: 20px;
   text-align: center;
   flex-direction: column;
