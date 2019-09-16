@@ -71,9 +71,9 @@ export const Form = styled.form`
   }
 
   button {
-    color: #000;
+    color: #50d878;
     font-size: 20px;
-    font-weight: 300;
+    font-weight: bold;
     background: #fff;
     height: 50px;
     width: 60%;
