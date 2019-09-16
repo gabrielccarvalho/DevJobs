@@ -17,7 +17,7 @@ export const Form = styled.form`
   text-align: center;
   flex-direction: column;
   align-items: center;
-  border-radius: 5px;
+  border-radius: 22px;
   background-color: #ffffff;
   -webkit-box-shadow: -2px 10px 29px 0px rgba(0, 0, 0, 0.72);
   -moz-box-shadow: -2px 10px 29px 0px rgba(0, 0, 0, 0.72);
@@ -46,27 +46,39 @@ export const Form = styled.form`
     margin-bottom: 15px;
     color: #777;
     font-size: 15px;
-    width: 80%;
+    width: 60%;
     border: 0px;
     outline: 0;
-    transition: all 0s ease-in-out;
+    transition: all 500ms ease-in-out;
     border-bottom: 1px solid #c3cad9;
-  }
+    text-align: center;
 
-  input:focus {
-    border-bottom: 2px solid #50d878;
+    &:focus {
+      width: 80%;
+      border-bottom: 2px solid #50d878;
+    }
   }
 
   button {
-    color: white;
+    color: #50d878;
     font-size: 20px;
     font-weight: bold;
-    background: #50d878;
+    background: #fff;
     height: 50px;
-    width: 80%;
-    border: 0;
-    border-radius: 5px;
+    width: 60%;
+    border: 1px solid #50d878;
+    border-radius: 28px;
     margin-top: 25px;
+    transition: 500ms;
+    &:hover {
+      color: #fff;
+      background: #50d878;
+      width: 80%;
+    }
+
+    &:focus {
+      outline-width: 0;
+    }
   }
 
   @keyframes FadeIn {
@@ -88,7 +100,7 @@ export const RegisterForm = styled.form`
   text-align: center;
   flex-direction: column;
   align-items: center;
-  border-radius: 5px;
+  border-radius: 20px;
   background-color: #ffffff;
   -webkit-box-shadow: -2px 10px 29px 0px rgba(0, 0, 0, 0.72);
   -moz-box-shadow: -2px 10px 29px 0px rgba(0, 0, 0, 0.72);
@@ -103,7 +115,7 @@ export const RegisterForm = styled.form`
     font-weight: 300;
     font-family: sans-serif;
     text-decoration: none;
-    color: blue;
+    color: #005eff;
   }
 
   small {

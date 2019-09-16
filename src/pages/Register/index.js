@@ -64,6 +64,7 @@ class Register extends Component {
               }}
               type="text"
               spellCheck="false"
+              autocapitalize="none"
               placeholder={this.state.nameSelected ? '' : 'Name'}
               onChange={e => this.setState({ name: e.target.value })}
             />
@@ -76,6 +77,7 @@ class Register extends Component {
               }}
               type="email"
               spellCheck="false"
+              autocapitalize="none"
               placeholder={this.state.emailSelected ? '' : 'Email'}
               onChange={e => this.setState({ email: e.target.value })}
             />
@@ -88,6 +90,7 @@ class Register extends Component {
               }}
               type="number"
               spellCheck="false"
+              autocapitalize="none"
               placeholder={this.state.cpfSelected ? '' : 'Cpf'}
               onChange={e => this.setState({ cpf: e.target.value })}
             />
@@ -100,6 +103,7 @@ class Register extends Component {
               }}
               type="password"
               spellCheck="false"
+              autocapitalize="none"
               placeholder={this.state.passwordSelected ? '' : 'Password'}
               onChange={e => this.setState({ password: e.target.value })}
             />
