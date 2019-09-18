@@ -64,6 +64,7 @@ class Contact extends Component {
                 type="text"
                 spellCheck="false"
                 autoCapitalize="none"
+                pattern="[^0-9]+"
                 placeholder={this.state.nameSelected ? '' : 'Name'}
                 onChange={e => this.setState({ name: e.target.value })}
               />
@@ -91,6 +92,7 @@ class Contact extends Component {
                 }}
                 type="tel"
                 spellCheck="false"
+                pattern="[^a-zA-Z]+"
                 placeholder={
                   this.state.phoneNumberSelected ? '' : 'Phone number'
                 }

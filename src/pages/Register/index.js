@@ -62,6 +62,7 @@ class Register extends Component {
                 type="text"
                 spellCheck="false"
                 autocapitalize="none"
+                pattern="[^0-9]+[^-,]+"
                 placeholder={this.state.nameSelected ? '' : 'Name'}
                 onChange={e => this.setState({ name: e.target.value })}
               />

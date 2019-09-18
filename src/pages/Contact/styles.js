@@ -63,6 +63,10 @@ export const Form = styled.form`
       width: 80%;
       border-bottom: 2px solid #50d878;
     }
+
+    &:invalid {
+      border-bottom: 2px solid red;
+    }
   }
 
   input::-webkit-outer-spin-button,

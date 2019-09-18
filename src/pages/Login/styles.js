@@ -57,6 +57,10 @@ export const Form = styled.form`
       width: 80%;
       border-bottom: 2px solid #50d878;
     }
+
+    &:invalid {
+      border-bottom: 2px solid red;
+    }
   }
 
   div {
@@ -93,6 +97,16 @@ export const Form = styled.form`
     to {
       opacity: 1;
       transform: scale(1);
+    }
+  }
+
+  @keyframes error {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-30);
+      transform: translateX(0);
     }
   }
 `;
