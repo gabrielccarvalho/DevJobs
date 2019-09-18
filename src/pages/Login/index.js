@@ -63,7 +63,7 @@ class Login extends Component {
                 }}
                 type="email"
                 spellCheck="false"
-                autocapitalize="none"
+                autoCapitalize="none"
                 placeholder={this.state.emailSelected ? '' : 'Email'}
                 onChange={e => this.setState({ email: e.target.value })}
               />
@@ -77,7 +77,7 @@ class Login extends Component {
                 }}
                 type="password"
                 spellCheck="false"
-                autocapitalize="none"
+                autoCapitalize="none"
                 placeholder={this.state.passwordSelected ? '' : 'Password'}
                 onChange={e => this.setState({ password: e.target.value })}
               />
