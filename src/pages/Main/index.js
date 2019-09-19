@@ -1,13 +1,25 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-import { logout } from '../../services/auth';
+import { withRouter } from 'react-router-dom';
 
-import {} from './styles';
+import { Header } from './styles';
 
-export default function Main() {
-  return (
-    <button type="button" onClick={() => logout()}>
-      Logout
-    </button>
-  );
+class Main extends Component {
+  state = {};
+
+  render() {
+    return (
+      <>
+        <Header>
+          <img
+            src="https://i.imgur.com/HeHGCIw.png"
+            alt="logo"
+            onClick={() => this.props.history.push('/')}
+          />
+        </Header>
+      </>
+    );
+  }
 }
+
+export default withRouter(Main);

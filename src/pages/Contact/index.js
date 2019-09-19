@@ -45,7 +45,11 @@ class Contact extends Component {
         <Container>
           <Form onSubmit={this.handleSubmit}>
             <div>
-              <img src="https://i.imgur.com/3ZMAPsP.png" alt="logo" />
+              <img
+                src="https://i.imgur.com/3ZMAPsP.png"
+                alt="logo"
+                onClick={() => this.props.history.push('/')}
+              />
             </div>
             <br></br>
             <small>We'd love to know more about your company!</small>

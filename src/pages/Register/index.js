@@ -47,7 +47,11 @@ class Register extends Component {
         <Container>
           <Form onSubmit={this.handleRegister}>
             <div>
-              <img src="https://i.imgur.com/3ZMAPsP.png" alt="logo" />
+              <img
+                src="https://i.imgur.com/3ZMAPsP.png"
+                alt="logo"
+                onClick={() => this.props.history.push('/')}
+              />
             </div>
             <br></br>
             <small>Sign Up to DevJobs</small>

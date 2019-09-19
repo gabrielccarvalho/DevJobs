@@ -7,7 +7,7 @@ export const Container = styled.div`
   flex-direction: column;
   height: 100vh;
   width: 100vw;
-  background-color: #ffffff;
+  background-color: #24292d;
 `;
 
 export const Form = styled.form`
@@ -44,6 +44,7 @@ export const Form = styled.form`
   img {
     width: 55px;
     height: 55px;
+    cursor: pointer;
   }
 
   input {
