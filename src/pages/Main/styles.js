@@ -14,4 +14,47 @@ export const Header = styled.div`
     height: 32px;
     cursor: pointer;
   }
+
+  input {
+    width: 320px;
+    height: 30px;
+    border-radius: 4px;
+    border: 0px;
+    background-color: rgba(66, 69, 74, 1);
+    padding: 10px;
+    transition: 500ms ease-out;
+
+    &:focus {
+      width: 480px;
+      background-color: white;
+      animation-name: expand;
+      animation-duration: 500ms;
+    }
+  }
+
+  @keyframes expand {
+    from {
+      width: 320px;
+      background-color: rgba(66, 69, 74, 1);
+    }
+    to {
+      width: 480px;
+      background-color: white;
+    }
+  }
+
+  @keyframes short {
+    from {
+      width: 480px;
+      background-color: white;
+    }
+    to {
+      width: 320px;
+      background-color: rgba(66, 69, 74, 1);
+    }
+  }
+`;
+
+export const Form = styled.form`
+  padding: 20px;
 `;

@@ -2,10 +2,16 @@ import React, { Component } from 'react';
 
 import { withRouter } from 'react-router-dom';
 
-import { Header } from './styles';
+import { Header, Form } from './styles';
 
 class Main extends Component {
-  state = {};
+  state = {
+    search: '',
+
+    searchSelected: false,
+  };
+
+  handleSearch() {}
 
   render() {
     return (
@@ -16,6 +22,23 @@ class Main extends Component {
             alt="logo"
             onClick={() => this.props.history.push('/')}
           />
+          <Form onSubmit={this.handleSearch}>
+            <input
+              onFocus={() => {
+                this.setState({ searchSelected: true });
+              }}
+              onBlur={() => {
+                this.setState({ searchSelected: false });
+              }}
+              type="text"
+              spellCheck="false"
+              autocapitalize="none"
+              placeholder={
+                this.state.searchSelected ? '' : 'Search users or companies'
+              }
+              onChange={e => this.setState({ search: e.target.value })}
+            />
+          </Form>
         </Header>
       </>
     );
