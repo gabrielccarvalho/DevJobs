@@ -10,11 +10,11 @@ It's a website built with ReactJS.
 
 The main purpose of this project is to get fresh developers, who struggle with the new world of professional programming, and companies in the easiest way possible, so they can built amazing things together.
 
-## Note
+## Note 📝
 
 This repository is still in building stage. It means that the information provided here can and will constantly update and change as the project evolves, so be aware for the changes!
 
-## About this project
+## About this project 📚
 
 As a developer or a company in general, the biggest problem is always either found a qualified developer or be found by them. Knowing this, I created the DevJobs, which is a open source job match solution for developers and companies.
 
@@ -25,13 +25,13 @@ Login page                                     | Register page
 :-------------------------:                    | :-------------------------:
 <img src="https://i.imgur.com/0vfRJk3.png" />  |  <img src="https://i.imgur.com/5Y3GSFh.png" />
 
-## Contribuing
+## Contribuing 🖊
 
 You can contribute in many ways, but the most effective is creating a new issue with your sugestion, code, experience, or anything you can think that it will help this project evolve.
 
-## Getting started
+## Getting started ⚙️
 
-### Installing
+### Installing 🔧
 
 Cloning the repository
 
@@ -55,11 +55,11 @@ Running the development enviroment
 $ yarn start
 ```
 
-### Note
+### Note 📝
 
 More instructions will come with the updated versions of the project!
 
-## Technologies:
+## Technologies 🖥
 
 - [React](https://reactjs.org/) - Used to build the site.
 - [Eslint](https://eslint.org/) - JS Linter and code style.
